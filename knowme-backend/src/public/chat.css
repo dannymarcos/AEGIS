@@ -1,0 +1,11 @@
+body { margin: 0; color: var(--text); }
+main { max-width: 920px; margin: 0 auto; padding: 16px; display: grid; gap: 14px; }
+.card { background: linear-gradient(180deg, #181c23 0%, #151a22 100%); padding: 12px; border-radius: 10px; border: 1px solid var(--border); }
+input { width: 100%; margin: 6px 0; padding: 8px; border-radius: 6px; border: 1px solid #2f2f2f; background: #0f0f0f; color: #fff; }
+button { margin-right: 6px; margin-top: 4px; }
+.messages { min-height: 180px; max-height: 320px; overflow: auto; border: 1px solid #2d2d2d; border-radius: 8px; padding: 8px; background: rgba(0,0,0,0.2); }
+.msg { border-bottom: 1px solid #2a2a2a; padding: 6px 0; word-break: break-word; }
+.meta { font-size: 12px; opacity: 0.8; }
+.deleted { opacity: 0.55; font-style: italic; }
+.call-grid { margin-top: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+video { width: 100%; min-height: 200px; border-radius: 8px; background: #000; }

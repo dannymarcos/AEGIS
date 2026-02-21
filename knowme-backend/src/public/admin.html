@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KnowMe Admin</title>
+  <link rel="stylesheet" href="/premium.css" />
+</head>
+<body>
+  <main>
+    <h1>Panel de Administración</h1>
+    <section class="card">
+      <h2>Acceso</h2>
+      <input id="token" placeholder="JWT admin" />
+      <div class="grid">
+        <button id="load">Cargar analytics</button>
+        <button id="load-users" class="secondary">Usuarios</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Analytics</h2>
+      <div id="kpis" class="grid"></div>
+    </section>
+
+    <section class="card">
+      <h2>Moderación</h2>
+      <input id="suspend-user-id" placeholder="User ID" />
+      <input id="suspend-reason" placeholder="Razón" />
+      <div class="grid">
+        <button id="suspend" class="danger">Suspender</button>
+        <button id="unsuspend" class="secondary">Quitar suspensión</button>
+      </div>
+      <pre id="moderation-output"></pre>
+    </section>
+
+    <section class="card">
+      <h2>User management</h2>
+      <table class="table" id="users-table"></table>
+    </section>
+  </main>
+  <script type="module" src="/admin.js"></script>
+</body>
+</html>

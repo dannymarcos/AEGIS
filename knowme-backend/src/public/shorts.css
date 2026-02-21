@@ -1,0 +1,7 @@
+body { margin: 0; background: #0f0f0f; color: #fff; font-family: Arial, sans-serif; }
+main { max-width: 520px; margin: 0 auto; padding: 12px; }
+#shorts-feed { display: grid; gap: 16px; }
+.short-card { background: #181818; border-radius: 12px; overflow: hidden; position: relative; min-height: 70vh; }
+.short-card video { width: 100%; height: 70vh; object-fit: cover; }
+.meta { padding: 8px 12px; }
+.ad-banner { background: #1a2230; border: 1px solid #344357; border-radius: 8px; padding: 10px; margin: 8px 0; }
