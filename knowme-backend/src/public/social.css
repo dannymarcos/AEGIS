@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; background: #111; color: #fff; margin: 0; }
+main { max-width: 780px; margin: 0 auto; padding: 16px; display: grid; gap: 14px; }
+.card { background: #1d1d1d; border-radius: 10px; padding: 12px; }
+textarea, input { width: 100%; margin: 6px 0; padding: 8px; border-radius: 6px; border: 1px solid #333; background: #0f0f0f; color: #fff; }
+button { background: #2563eb; color: #fff; border: 0; border-radius: 6px; padding: 8px 12px; cursor: pointer; }
+.story { background: #232323; border-left: 4px solid #556b8a; margin: 8px 0; padding: 8px; }
+.post { background: #202020; border-left: 4px solid #7184a7; margin: 8px 0; padding: 10px; }
+.meta { opacity: .85; font-size: 12px; }
+.ad-card { background: #1a2230; border: 1px solid #344357; border-radius: 10px; margin: 10px 0; padding: 10px; }

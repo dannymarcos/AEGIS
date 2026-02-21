@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KnowMe Social</title>
+  <link rel="stylesheet" href="/premium.css" />
+  <link rel="stylesheet" href="/social.css" />
+</head>
+<body>
+  <main>
+    <h1>KnowMe Social Feed</h1>
+    <section class="card">
+      <h2>Create Post</h2>
+      <textarea id="post-content" placeholder="Write text, #hashtags, @mentions"></textarea>
+      <input id="post-image" placeholder="Image URL (optional)" />
+      <button id="create-post">Publish</button>
+    </section>
+
+    <section class="card">
+      <h2>Create Story (24h)</h2>
+      <input id="story-content" placeholder="Story text" />
+      <input id="story-image" placeholder="Story image URL (optional)" />
+      <button id="create-story">Add Story</button>
+    </section>
+
+    <section class="card">
+      <h2>Timeline</h2>
+      <input id="search-query" placeholder="Search posts / hashtags" />
+      <button id="search-btn">Search</button>
+      <button id="reload">Reload</button>
+      <div id="stories"></div>
+      <div id="timeline"></div>
+      <div id="feed-status" class="meta"></div>
+    </section>
+  </main>
+  <script type="module" src="/social.js"></script>
+</body>
+</html>

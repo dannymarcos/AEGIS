@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KnowMe Access</title>
+  <link rel="stylesheet" href="/premium.css" />
+  <link rel="stylesheet" href="/auth.css" />
+</head>
+<body>
+  <canvas id="matrix-rain" aria-hidden="true"></canvas>
+  <main class="auth-shell">
+    <section class="card auth-card">
+      <h1>KnowMe</h1>
+      <p>Registro/Login unificado. El primer usuario registrado se asigna como administrador.</p>
+      <div class="toggle-row">
+        <button id="show-login" class="active">Login</button>
+        <button id="show-register">Registro</button>
+      </div>
+
+      <form id="login-form" class="auth-form">
+        <input id="login-email" type="email" placeholder="Email" required />
+        <input id="login-password" type="password" placeholder="Password" required />
+        <button type="submit">Entrar</button>
+      </form>
+
+      <form id="register-form" class="auth-form hidden">
+        <input id="register-username" placeholder="Username" required />
+        <input id="register-email" type="email" placeholder="Email" required />
+        <input id="register-password" type="password" placeholder="Password" required />
+        <button type="submit">Crear cuenta</button>
+      </form>
+
+      <div id="auth-feedback"></div>
+      <div class="quick-links">
+        <a href="/shorts">Shorts</a>
+        <a href="/social">Social</a>
+        <a href="/chat">Chat & Calls</a>
+        <a href="/creator-dashboard">Creator</a>
+        <a href="/admin">Admin</a>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="/auth.js"></script>
+</body>
+</html>

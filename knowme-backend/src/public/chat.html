@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KnowMe Chat</title>
+  <link rel="stylesheet" href="/premium.css" />
+  <link rel="stylesheet" href="/chat.css" />
+</head>
+<body>
+  <main>
+    <h1>KnowMe Communications</h1>
+    <section class="card">
+      <h2>Connect</h2>
+      <input id="peer-id" placeholder="Peer user id (for direct chat/call)" />
+      <button id="open-direct">Open Direct Chat</button>
+      <div id="presence"></div>
+    </section>
+
+    <section class="card">
+      <h2>Current Chat</h2>
+      <div id="chat-id"></div>
+      <div id="typing"></div>
+      <div id="messages" class="messages"></div>
+      <input id="message-text" placeholder="Type a message" />
+      <input id="voice-url" placeholder="Voice URL (optional)" />
+      <button id="send-text">Send Text</button>
+      <button id="send-voice">Send Voice</button>
+    </section>
+
+    <section class="card">
+      <h2>Calls (WebRTC)</h2>
+      <div id="call-status">Idle</div>
+      <button id="start-audio-call">Start Audio Call</button>
+      <button id="start-video-call">Start Video Call</button>
+      <button id="end-call">End Call</button>
+      <div class="call-grid">
+        <video id="local-video" autoplay playsinline muted></video>
+        <video id="remote-video" autoplay playsinline></video>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>CloudBot Memory Assistant</h2>
+      <div id="assistant-memory" class="messages"></div>
+      <input id="assistant-input" placeholder="Pídele ayuda para mensajes/llamadas o guarda memoria (ej. me llamo...)" />
+      <button id="assistant-send">Enviar a CloudBot</button>
+    </section>
+  </main>
+
+  <script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+  <script type="module" src="/chat.js"></script>
+</body>
+</html>
